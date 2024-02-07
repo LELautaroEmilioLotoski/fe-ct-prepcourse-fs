@@ -4,6 +4,13 @@ function agregarPropiedad(objeto, propiedad) {
   // Esta propiedad será igual al valor `null`.
   // Retornar el objeto.
   // Tu código:
+    objeto[propiedad] = null;
+    return objeto;
 }
-
+const letra = {
+  x: 1,
+  y: 2
+}
+let caracter = agregarPropiedad(letra, 'z');
+console.log(caracter);
 module.exports = agregarPropiedad;
